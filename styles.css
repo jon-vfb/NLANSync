@@ -1,0 +1,134 @@
+.nlansync-devices-list {
+  padding: 10px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  margin: 10px 0;
+  border-left: 3px solid var(--accent-color);
+}
+
+.nlansync-auth-status {
+  padding: 10px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  margin: 10px 0;
+  border-left: 3px solid var(--color-green);
+  color: var(--color-green);
+  font-weight: 500;
+}
+
+.nlansync-sync-progress {
+  width: 100%;
+  height: 20px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.nlansync-sync-progress-bar {
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nlansync-error {
+  padding: 10px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  margin: 10px 0;
+  border-left: 3px solid var(--color-red);
+  color: var(--color-red);
+}
+
+.nlansync-info {
+  padding: 10px;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  margin: 10px 0;
+  border-left: 3px solid var(--color-blue);
+  color: var(--color-blue);
+  font-size: 0.9em;
+}
+
+.nasync-device-item {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: var(--background-tertiary);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nlansync-device-name {
+  font-weight: 500;
+}
+
+.nlansync-device-status {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.nlansync-sync-button {
+  margin-top: 10px;
+}
+
+.nlansync-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.nlansync-modal-content {
+  background-color: var(--background-primary);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nlansync-modal-header {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-normal);
+}
+
+.nlansync-modal-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.nlansync-mobile-optimized {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .nlansync-settings-section {
+    margin-bottom: 20px;
+  }
+
+  .nlansync-modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .nlansync-device-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

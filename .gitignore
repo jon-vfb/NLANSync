@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+*.js
+!esbuild.config.mjs
+.obsidian/
+.DS_Store
+.env
+.env.local
