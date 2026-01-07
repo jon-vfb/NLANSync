@@ -47,28 +47,12 @@ npm run build
 
 ✅ Done! Edit a note and watch it sync.
 
-## Google Drive Backup (5-Minute Setup)
-
-1. Create project at [cloud.google.com](https://console.cloud.google.com/):
-   - New Project
-   - APIs & Services → Library → Search "Google Drive API" → Enable
-   - Credentials → Create OAuth 2.0 (Desktop)
-   - Copy Client ID and Secret
-
-2. In Obsidian:
-   - Settings → NAsync → Enable "Google Drive Sync"
-   - Paste Client ID and Secret
-   - Click "Login with Google"
-   - Follow browser prompts
-
-✅ Done! Files sync to "Obsidian-Sync" folder in Google Drive.
-
 ## Key Features
 
 | Feature | Setup | Benefit |
 |---------|-------|---------|
 | **LAN Sync** | 1 min | Fast, no internet needed |
-| **Google Drive** | 5 min | Cloud backup, cross-device |
+
 | **Sync on Save** | 30 sec | Automatic backup |
 | **Manual Sync** | 1 click | Full control |
 | **Auto-Sync** | 2 min | Periodic backups |
@@ -81,11 +65,6 @@ Settings → NAsync →
   │   ├── Enable LAN Sync
   │   ├── Device Name
   │   └── Connect to Device → [IP] → Connect
-  ├── Google Drive Sync
-  │   ├── Enable Google Drive Sync
-  │   ├── Client ID
-  │   ├── Client Secret
-  │   └── Login with Google
   └── Sync Settings
       ├── Sync on Save
       ├── Auto-Sync (interval)
@@ -97,7 +76,6 @@ Settings → NAsync →
 | Problem | Solution |
 |---------|----------|
 | Can't connect LAN | Same WiFi? Firewall off? IP correct? |
-| Google auth fails | Credentials correct? API enabled? |
 | Files not syncing | Settings enabled? File matches pattern? |
 | Slow performance | Reduce sync interval? Smaller files? |
 

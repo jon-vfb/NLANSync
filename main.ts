@@ -188,7 +188,7 @@ export default class NLANSyncPlugin extends Plugin {
   private async handleFileDelete(file: TFile) {
     // Handle file deletion sync
     console.log('File deleted:', file.path);
-    // TODO: Implement deletion sync to Google Drive and LAN
+    // TODO: Implement deletion sync to LAN
   }
 
   private getFilesToSync(): TFile[] {
